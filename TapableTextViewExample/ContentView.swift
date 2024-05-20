@@ -18,14 +18,16 @@ struct ContentView: View {
                     attributes[range].underlineStyle = .single
                 }
             }
+            
             TextView(
                 text: "Hello, world! This is an example of a TextView",
                 color: .black,
                 font: .body,
                 attributes: [("world", .red, nil),
                              ("example", .blue, nil),
-                            ("TextView", .green, .title)
+                             ("TextView", .green, .title)
                             ])
+            
             TapableTextView(
                 text: "Tapable TextView example",
                 color: .black,

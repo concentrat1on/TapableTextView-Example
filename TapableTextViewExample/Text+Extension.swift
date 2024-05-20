@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension Text {
+    
     init(_ text: String, configure: (inout AttributedString) -> Void) {
         var attributedText = AttributedString(text)
         configure(&attributedText)
